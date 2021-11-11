@@ -13,12 +13,13 @@ class App extends Component {
 
         <Switch>
 
-          <Route exact path="/" component={ Home } />
-          <Route path="/about" component={ About } />
           <Route
             exact
             path="/users/:id"
-            render={ (props) => <Users {...props} greetingsMessage="Good Morning" /> } />
+            render={ (props) => <Users {...props} greetingsMessage="Good Morning" /> }
+          />
+          <Route path="/about" component={ About } />
+          <Route exact path="/" component={ Home } />
 
         </Switch>
 
